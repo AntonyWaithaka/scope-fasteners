@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    background-image: url(images/banner.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    opacity: 1;
+    min-height: 2.75rem;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo,
+.title{
+    color: skyblue;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.homelink,
+.productlink,
+.locationlink,
+.contactlink,
+.aboutuslink{
+    text-decoration: none;
+    color: skyblue;
+    font-size: 25px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+.homelink:hover,
+.productlink,
+.locationlink:hover,
+.contactlink:hover,
+.aboutuslink:hover{
+    background-color: gray;
+}
+.pagename{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    color: white;
+}
+h1, p{
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 66;
+}
+.item{
+    width: 400px;
+    height: 300px;
+    background-color: skyblue;
+    margin: 0.5rem;
+}
+.img_div{
+    width: 100%;
+    height:50%;
+}
+img{
+    width: 400px;
+    height: 150px;
+}
+.description{
+    height:50%;
+}
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
+.bottombar{
+    background-color: grey;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
