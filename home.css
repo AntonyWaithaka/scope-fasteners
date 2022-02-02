@@ -22,12 +22,12 @@ body{
     position: relative;
     display: block;
     float: left;
-    width: 120px;
+    width: 100px;
 }
 .navarea .topbar .title{
     position: relative;
     height: 100%;
-    width: 500px;
+    width: 400px;
     display: block;
     float: left;
     max-width: 500px;
