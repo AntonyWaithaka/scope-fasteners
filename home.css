@@ -3,170 +3,259 @@ body{
     padding: 0px;
     font-size: 16px;
 }
-.navbar{
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-    opacity: 0.8;
-    min-height: 2.75rem;
-    height: 100px;
-    width: 100%;
+.navarea{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: white;
 }
-.navbar:hover{
-    opacity: 1;
+.navarea .topbar{
+    position: relative;
+    height: 100%;
+    background-color: white;
 }
-.logo,
-.title{
+.navarea .topbar img{
+    position: relative;
+    display: block;
+    float: left;
+    width: 120px;
+}
+.navarea .topbar .title{
+    position: relative;
+    height: 100%;
+    width: 500px;
+    display: block;
+    float: left;
+    max-width: 500px;
+    font-family: Verdana;
+    font-size: 35px;
     color: darkblue;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
+    text-align: left;
 }
-.logo img{
-    width: 100px;
-    height: 100px;
-}
-.navbar a{
-    text-decoration: none;
-    color: darkblue;
-    font-size: 25px;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-}
-.navbar .active{
-    background-color: gray;
-}
-.navbar a:hover{
-    background-color: gray;
-}
-.icon{
+.navarea .topbar .icon{
     display: none;
 }
 @media screen and (max-width:600px) {
-    .navbar a{
-        display: none;
+    .navarea{
+        height: 80px;
     }
-    .navbar a.icon{
-        float: right;
+    .navarea .topbar{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+    .navarea .topbar img{
+        position: relative;
         display: block;
+        float: left;
+        width: 100px;
+    }
+    .navarea .topbar .title{
+        position: relative;
+        height: 100%;
+        width: 250px;
+        display: block;
+        float: left;
+        max-width: 700px;
+        font-family: Verdana;
+        font-size: 20px;
+        color: darkblue;
+        text-align: left;
+    }
+     
+    .navarea .topbar .icon{
+        position: relative;
+        width: 50px;
+        height: 100%;
+        display: block;
+        float: right;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 15px;
+    }   
+}
+.navarea .navbar{
+    position: relative;
+    overflow: visible;
+    z-index: 999;
+    min-height: 2.75rem;
+    height: 40px;
+    background-color: white;
+}
+.navarea .navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navarea .navbar ul li{
+    float: left;
+    height: 40px;
+    width: 133px;
+    background-color: white;
+    line-height: 40px;
+    margin-left: 2px;
+}
+.navarea .navbar ul li a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.navarea .navbar ul li a:hover{
+    background-color: darkblue;
+    color: white;
+}
+.navarea .navbar .active{
+    background-color: darkblue;
+    color: white;
+}
+.navarea .navbar ul li ul li{
+    display: none;
+}
+.navarea .navbar ul li:hover ul li{
+    display: block;
+}
+.navarea .navbar ul li:hover ul li ul li{
+    display: none;
+}
+.navarea .navbar ul li:hover ul li:hover ul li{
+    display: block;
+    float: left;
+    margin-left: 134px;
+    width: 200px;
+}
+@media screen and (max-width:600px) {
+    .navarea .navbar ul li{
+        display: none;
     }    
 }
 @media screen and (max-width:600px) {
-    .navbarresponsive{
+    .navarea .navbarresponsive{
+        width: 100%;
         background-color: white;
+        z-index: 99;
     }
-    .navbarresponsive .logo{
-        position: absolute;
-        display: block;
-        float: right;
-        top: 0px;
-        height: 100px;
-        width: 200px;
+    .navarea .navbarresponsive ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
     }
-    .navbarresponsive .title{
-        position: absolute;
-        display: block;
-        float: right;
-        top: 0px;
-        height: 100px;
-        width: 300px;
-        left: 100px;
+    .navarea .navbarresponsive ul li{
+        list-style-type: none;
     }
-    .navbarresponsive .icon{
-        position: absolute;
-        display: block;
-        right: 20px;
-        top: 20px;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        color: darkblue;
-        background-color: gray;
-        height: 20px;
-    }
-    .navbarresponsive a:not(:last-child){
+    .navarea .navbarresponsive ul li a{
         float: none;
         display: block;
-        text-align: center;
+        text-align: left;
         color: darkblue;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 20px;
     }
-    .navbarresponsive a:not(:last-child):hover{
-        background-color: grey;
+    .navarea .navbarresponsive ul li a:hover{
+        background-color: darkblue;
         color: white;
     }
-    .navbarresponsive .active{
-        background-color: grey;
-        margin-top: 100px;
+    .navarea .navbarresponsive .active{
+        background-color: darkblue;
+        color: white;
+    }
+    .navarea .navbarresponsive ul li ul li{
+        display: none;
+    }
+    .navarea .navbarresponsive ul li:hover ul li{
+        display: block;
+        padding-left: 20px;
+    }
+    .navarea .navbarresponsive ul li:hover ul li ul li{
+        display: none;
+    }
+    .navarea .navbarresponsive ul li:hover ul li:hover ul li{
+        display: block;
+        padding-left: 20px;
     }
 }
 
 
-.container2{
+.banner{
+    position: relative;
     width: 100%;
-    height: 600px;
+    text-align: center;
+    margin: 0px;
+    color: white;
 }
-.container2 img{
+.banner img{
     width: 100%;
-    height: 100%;
 }
-.container3{
+.banner .text1{
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    font-size: 40px;
+}
+.banner .text2{
+    position: absolute;
+    top: 64px;
+    left: 16px;
+    font-size: 40px;
+}
+.banner .text3{
+    position: absolute;
+    bottom: 64px;
+    left: 16px;
+    font-size: 40px;
+}
+.banner .text4{
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 40px;
+}
+.blue_banner{
+    position: relative;
     width: 100%;
-    min-height: 900px;
+    min-height: 300px;
     background-color: #003399;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin: 0px;
 }
-.container3 .box{
+.blue_banner .box{
     position: relative;
-    width: 530px;
-    height: 350px;
-    margin: 25px;
+    width: 370px;
+    height: 250px;
+    margin: 20px;
 }
-.container3 .box img{
-    position: absolute;
+.blue_banner img{
     width: 100%;
-    height: 100%;
 }
-.container3 .box .bottomtext{
+.blue_banner .box .name{
     position: absolute;
-    background-color: black;
     color: white;
-    opacity: 0.8;
-    bottom: 0px;
-    left: 0px;
+    bottom: 32px;
+    left: 16px;
     width: 100%;
-    height: 130px;
+    font-size: 30px;
 }
-.container3 .box .bottomtext:hover{
-    opacity: 1;
-}
-.container3 .box .bottomtext h1{
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 27px;
-}
-.container3 .box .bottomtext p{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+.blue_banner .box .description{
+    position: absolute;
+    color: white;
+    bottom: 16px;
+    left: 16px;
+    width: 100%;
+    font-size: 20px;
 }
 .container4{
     display: flex;
@@ -197,7 +286,6 @@ body{
 }
 .container4 .box1 img{
     width: 100%;
-    height: 100%;
 }
 .container4 p{
     margin: 5px;
@@ -226,16 +314,14 @@ body{
 }
 .container6{
     width: 100%;
-    height: 600px;
+    min-height: 600px
 }
 .container6 .box3{
     position: relative;
-    height: 100%;
     width: 100%;
 }
 .container6 .box3 img{
     position: absolute;
-    height: 100%;
     width: 100%;
 }
 .container6 .box3 .imgtext{
@@ -247,8 +333,8 @@ body{
 }
 .container6 .box3 .imgtext h1{
     font-family: Helvetica;
-    font-size: 4.625em;
-    color: white;
+    font-size: 4.625rem;
+    color: darkorange;
     margin-top: 100px;
     margin-bottom: 0px;
     margin-left: 100px;
@@ -256,12 +342,13 @@ body{
 .container6 .box3 .imgtext h2{
     font-family: sans-serif;
     font-size: 2.125rem;
-    color: white;
+    color: darkblue;
     margin-top: 20px;
     margin-left: 100px;
 }
 
 .container7{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

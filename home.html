@@ -5,55 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="home.css", rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar", id="myTopnav">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="title">Scope Fasteners</div>
-
-            <a href="home.html"class="active">Home</a>
-            <a href="products.html"class="productlink">Products</a>
-            <a href="location.html"class="locationlink">Location</a>
-            <a href="contact.html"class="contactlink">Contacts</a>
-            <a href="aboutus.html"class="aboutuslink">About Us</a>
-            <a href="javascript:void(0);"class="icon" onclick="myFunction()">=</a>
+    <div class="navarea">
+        <div class="topbar">
+            <img src="images/logo.png" alt="logo">
+            <div class="title">SCOPE FASTENERS & ENGINEERING SERVICES</div>
+            <a href="javascript:void(0);"class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="navbar", id="myTopnav">  
+            <ul>        
+                <li><a href="home.html"class="active">Home</a></li>
+                <li><a href="#"class="productlink">Products</a>
+                <ul>
+                    <li><a href="products.html">All Products</a>
+                    <li><a href="#">bolts</a>
+                    <ul>
+                        <li><a href="#">Type 1</a></li>
+                        <li><a href="#">Type 2</a></li>
+                        <li><a href="#">Type 3</a></li>
+                    </ul></li>
+                    <li><a href="#">nuts</a></li>
+                    <li><a href="#">nuts</a></li>
+                    <li><a href="#">washers</a></li>
+                </ul></li>
+                <li><a href="#"class="locationlink">Location</a></li>
+                <li><a href="#"class="contactlink">Contacts</a></li>
+                <li><a href="#"class="aboutuslink">About Us</a></li>
+            </ul> 
         </div>
     </div>
-    <div class="container2">
+    <div class="banner">
         <img src="images/banner.jpg" alt="home image">
+        <div class="text1">We specialize in </div>
+        <div class="text2">all kinds of Fasteners</div>
+        <div class="text3">We also offer</div>
+        <div class="text4">Enginnering solutions</div>
     </div>
-    <div class="container3">
+    <div class="blue_banner">
         <div class="box">
             <img src="images/bolts_image.jpg" alt="bolt">
-            <div class="bottomtext">
-                <h1>FASTENERS</h1>
-                <p>We offer over 5000 types of fasterners</p>
-            </div>
+            <div class="name">FASTENERS</div>
+            <div class="description">We offer over 5,000 types of fasteners</div>
         </div>
         <div class="box">
             <img src="images/bolts_image.jpg" alt="bolt">
-            <div class="bottomtext">
-                <h1>CUSTOM COMPONENTS</h1>
-                <p>We design and create custom fasterners</p>
-            </div>
+            <div class="name">ENGINEERING SERVICES</div>
+            <div class="description">We provide other Engineering solutions</div>
         </div>
         <div class="box">
             <img src="images/bolts_image.jpg" alt="bolt">
-            <div class="bottomtext">
-                <h1>WE SUPPLY</h1>
-                <p>We are the biggest suppliers around</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/bolts_image.jpg" alt="bolt">
-            <div class="bottomtext">
-                <h1>QUALITY ASSURED</h1>
-                <p>Our products are of high quality standards</p>
-            </div>
-        </div>
+            <div class="name">CUSTOM COMPONENTS</div>
+            <div class="description">We build custom fasteners</div>
+    </div>
     </div>
     <div class="container4">
         <div class="box1">

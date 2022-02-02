@@ -1,58 +1,189 @@
 body{
     margin: 0px;
-    background-image: url(images/banner.jpg);
-    background-size: 100%;
-    background-repeat: repeat;
+    padding: 0px;
+    font-size: 16px;
 }
-.navbar{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    opacity: 1;
-    min-height: 2.75rem;
-    height: 100px;
-    width: 100%;
+.navarea{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.logo,
-.title{
-    color: skyblue;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
-}
-.logo img{
-    width: 100px;
-    height: 100px;
-}
-.homelink,
-.productlink,
-.locationlink,
-.contactlink,
-.aboutuslink{
-    text-decoration: none;
-    color: skyblue;
-    font-size: 25px;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-}
-.homelink:hover,
-.productlink,
-.locationlink:hover,
-.contactlink:hover,
-.aboutuslink:hover{
-    background-color: gray;
-}
-.pagename{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    flex-wrap: wrap;
     width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.navarea .topbar{
+    position: relative;
+    height: 100%;
+    background-color: white;
+}
+.navarea .topbar img{
+    position: relative;
+    display: block;
+    float: left;
+    width: 120px;
+}
+.navarea .topbar .title{
+    position: relative;
+    height: 100%;
+    width: 500px;
+    display: block;
+    float: left;
+    max-width: 500px;
+    font-family: Verdana;
+    font-size: 35px;
+    color: darkblue;
+    text-align: left;
+}
+.navarea .topbar .icon{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .navarea{
+        height: 80px;
+    }
+    .navarea .topbar{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+    .navarea .topbar img{
+        position: relative;
+        display: block;
+        float: left;
+        width: 120px;
+        height: 100px;
+    }
+    .navarea .topbar .title{
+        position: relative;
+        height: 100%;
+        width: 250px;
+        display: block;
+        float: left;
+        max-width: 700px;
+        font-family: Verdana;
+        font-size: 20px;
+        color: darkblue;
+        text-align: left;
+    }
+     
+    .navarea .topbar .icon{
+        position: relative;
+        width: 50px;
+        height: 100%;
+        display: block;
+        float: right;
+        text-decoration: none;
+        background-color: darkblue;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 15px;
+    }   
+}
+.navarea .navbar{
+    position: relative;
+    overflow: visible;
+    z-index: 999;
+    min-height: 2.75rem;
+    height: 40px;
+    background-color: white;
+}
+.navarea .navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navarea .navbar ul li{
+    float: left;
+    height: 40px;
+    width: 133px;
+    background-color: white;
+    line-height: 40px;
+    margin-left: 2px;
+}
+.navarea .navbar ul li a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.navarea .navbar ul li a:hover{
+    background-color: darkblue;
     color: white;
+}
+.navarea .navbar .active{
+    background-color: darkblue;
+    color: white;
+}
+.navarea .navbar ul li ul li{
+    display: none;
+}
+.navarea .navbar ul li:hover ul li{
+    display: block;
+}
+.navarea .navbar ul li:hover ul li ul li{
+    display: none;
+}
+.navarea .navbar ul li:hover ul li:hover ul li{
+    display: block;
+    float: left;
+    margin-left: 134px;
+    width: 200px;
+}
+@media screen and (max-width:600px) {
+    .navarea .navbar ul li{
+        display: none;
+    }    
+}
+@media screen and (max-width:600px) {
+    .navarea .navbarresponsive{
+        width: 100%;
+        background-color: white;
+        z-index: 99;
+    }
+    .navarea .navbarresponsive ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .navarea .navbarresponsive ul li{
+        list-style-type: none;
+    }
+    .navarea .navbarresponsive ul li a{
+        float: none;
+        display: block;
+        text-align: left;
+        color: darkblue;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navarea .navbarresponsive ul li a:hover{
+        background-color: darkblue;
+        color: white;
+    }
+    .navarea .navbarresponsive .active{
+        background-color: darkblue;
+        color: white;
+    }
+    .navarea .navbarresponsive ul li ul li{
+        display: none;
+    }
+    .navarea .navbarresponsive ul li:hover ul li{
+        display: block;
+        padding-left: 20px;
+    }
+    .navarea .navbarresponsive ul li:hover ul li ul li{
+        display: none;
+    }
+    .navarea .navbarresponsive ul li:hover ul li:hover ul li{
+        display: block;
+        padding-left: 20px;
+    }
 }
 h1, p{
     margin: 0px;
@@ -76,7 +207,6 @@ h1, p{
 }
 img{
     width: 400px;
-    height: 150px;
 }
 .description{
     height:50%;
