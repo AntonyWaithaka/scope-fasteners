@@ -299,6 +299,11 @@ body{
     margin: 5px;
     font-family: sans-serif;
 }
+@media screen and (max-width:600px) {
+    .container4 .box1{
+        margin: 15px;
+    }
+}
 
 .banner2{
     position: relative;
