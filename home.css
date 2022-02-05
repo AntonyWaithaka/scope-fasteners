@@ -192,7 +192,6 @@ body{
 .banner{
     position: relative;
     width: 100%;
-    text-align: center;
     margin: 0px;
     color: white;
 }
@@ -201,27 +200,27 @@ body{
 }
 .banner .text1{
     position: absolute;
-    top: 32px;
-    left: 16px;
-    font-size: 40px;
+    bottom: 50%;
+    left: 32px;
+    font-size: 90px;
 }
 .banner .text2{
     position: absolute;
-    top: 64px;
-    left: 16px;
-    font-size: 40px;
+    bottom: 40%;
+    left: 32px;
+    font-size: 60px;
 }
 @media screen and (max-width:600px) {
     .banner .text1{
         position: absolute;
-        top: 64px;
-        left: 32px;
+        bottom: 64px;
+        left: 16px;
         font-size: 45px;
     }
     .banner .text2{
         position: absolute;
-        top: 120px;
-        left: 32px;
+        bottom: 16px;
+        left: 16px;
         font-size: 40px;
     }
     
@@ -246,6 +245,10 @@ body{
 }
 .blue_banner img{
     width: 100%;
+    transition: transform .2s;
+}
+.blue_banner img:hover{
+    transform: scale(1.1);
 }
 .blue_banner .box .name{
     position: absolute;
@@ -270,22 +273,21 @@ body{
     width: 100%;
     min-height: 400px;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 .container4 .box1{
     width: 530px;
-    height: 350px;
     margin: 25px;
     text-align: left;
 }
 .container4 .box1 h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     font-size: 40px;
     margin: 0px;
     margin-top: 25px;
 }
 .container4 .box1 h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     font-size: 60px;
     color: royalblue;
     margin: 0px;
@@ -295,64 +297,52 @@ body{
 }
 .container4 p{
     margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container5{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 200px;
-    justify-content: center;
-    align-content: center;
-}
-.container5 .box2{
-    width: 50%;
-    height: 100%;
-    margin-top: 25px;
-    text-align: center;
-}
-.container5 .box2 h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    margin: 0px;
-    margin-top: 25px;
-}
-.container6{
-    width: 100%;
-    height: 600px
-}
-.container6 .box3{
-    position: relative;
-    width: 100%;
-}
-.container6 .box3 img{
-    position: absolute;
-    width: 100%;
-}
-.container6 .box3 .imgtext{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-.container6 .box3 .imgtext h1{
-    font-family: Helvetica;
-    font-size: 4.625rem;
-    color: darkorange;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-}
-.container6 .box3 .imgtext h2{
     font-family: sans-serif;
-    font-size: 2.125rem;
-    color: darkblue;
-    margin-top: 20px;
-    margin-left: 100px;
 }
 
+.banner2{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+.banner2 img{
+    width: 100%;
+}
+.banner2 .text1{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    font-family: helvetica;
+    font-size: 5.625rem;
+    color: darkorange;
+}
+.banner2 .text2{
+    position: absolute;
+    top: 70%;
+    left: 16px;
+    font-family: helvetica;
+    font-size: 3.625rem;
+    color: skyblue;
+}
+@media screen and (max-width:600px) {
+    .banner2 .text1{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        font-family: helvetica;
+        font-size: 2.425rem;
+        color: darkorange;
+    }
+    .banner2 .text2{
+        position: absolute;
+        top: 70%;
+        left: 16px;
+        font-family: helvetica;
+        font-size: 1.625rem;
+        color: skyblue;
+    }
+    
+}
 .container7{
     position: relative;
     display: flex;
@@ -360,43 +350,67 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #000033;
+    background-color: #003399;
     color: white;
     width: 100%;
     min-height: 200px;
 }
 .container7 .box4{
-    position: relative;
-    width: 18.75em;
-    height: 12.5em;
-    background-color: #000033;
-    margin: 15px;
-}
-.container7 .box4 .boxtext{
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.container7 .box4 .boxtext h1{
-    font-family:  sans-serif;
-    font-size: 30px;    
-    text-align: center;
-}
-.container7 .box4 .boxtext h2{
-    font-family: sans-serif;
-    font-size: 16px;    
-    text-align: center;
-}
-.bottombar{
-    position: sticky;
-    top: 100%;
-    color: grey;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 18.75em;
+    height: 12.5em;
+    background-color: #003399;
+    margin: 15px;
+}
+.container7 .box4 .boxcontent1{
+    font-family:  sans-serif;
+    font-size: 25px;
+}
+.container7 .box4 .boxcontent2{
+    font-family:  sans-serif;
+    font-size: 16px;    
+}
+@media screen and (max-width:600px) {
+    .container7 .box4{
+        height: 6em;
+    }
+}
+.bottombox{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottombox .connect{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.bottombox .connect img{
+    width: 2rem;
+    margin: 1rem;
+}
+.bottombox .rights{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 p{
     margin: 0.5rem;

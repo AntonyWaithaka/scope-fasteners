@@ -12,12 +12,12 @@
         <div class="topbar">
             <img src="images/logo.png" alt="logo">
             <div class="title">SCOPE FASTENERS & ENGINEERING SERVICES</div>
-            <a href="javascript:void(0);"class="icon" onclick="myFunction()">=</a>
+            <a href="javascript:void(0);"class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
         <div class="navbar", id="myTopnav">  
             <ul>        
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#"class="active">Products</a>
+                <li><a href="#" class="active">Products</a>
                 <ul>
                     <li><a href="products.html">All Products</a>
                     <li><a href="#">bolts</a>
@@ -30,67 +30,90 @@
                     <li><a href="#">nuts</a></li>
                     <li><a href="#">washers</a></li>
                 </ul></li>
-                <li><a href="#"class="locationlink">Location</a></li>
+                <li><a href="#"class="serviceslink">Services</a></li>
                 <li><a href="#"class="contactlink">Contacts</a></li>
                 <li><a href="#"class="aboutuslink">About Us</a></li>
             </ul> 
         </div>
     </div>
-    <div class="pagename">
-        <h1>Our Products</h1>
+    <div class="hugecontainer">
+        <div class="category">
+            <div>Bolts</div>
+        </div>
+        <div class="items">
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">bolt type 1</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">bolt type 2</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">bolt type 3</div>
+            </div>
+
+        </div>
+        <div class="category">
+            <div>screws</div>
+        </div>
+        <div class="items">
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">screw type 1 bolt</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">screw type 2</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">screw type 3</div>
+            </div>
+
+        </div>
+        <div class="category">
+            <div>rivets</div>
+        </div>
+        <div class="items">
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">rivets type 1</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">rivets type 2</div>
+            </div>
+            <div class="itembox">
+                <img src="images/banner.jpg" alt="image">
+                <div class="name">rivets type 2</div>
+            </div>
+
+        </div>
     </div>
-    <div class="container">
-        <div class="item">
-            <div class="img_div">
-                <img src="images/banner.jpg" alt="image">
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis beatae odit fuga sapiente corporis
-                     tempora modi recusandae iure possimus libero autem eum asperiores necessitatibus 
-                    repellendus, eveniet distinctio iste. Vel?</p>
-                <h2>Price 500/=</h2>
-            </div>
+    <div class="bottombox">
+        <div class="connect">
+            <a href="www.facebook.com"><img src="images/facebook.png"></a>
+            <a href="www.twitter.com"><img src="images/twitter.png"></a>
+            <a href="www.instagram.com"><img src="images/instagram.png"></a>
+            <a href="www.whatsapp.com"><img src="images/whatsapp.png"></a>
         </div>
-        <div class="item">
-            <div class="img_div">
-                <img src="images/banner.jpg" alt="image">
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis beatae odit fuga sapiente corporis
-                    tempora modi recusandae iure possimus libero autem eum asperiores necessitatibus 
-                   repellendus, eveniet distinctio iste. Vel?</p>
-               <h2>Price 500/=</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img_div">
-                <img src="images/banner.jpg" alt="image">
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis beatae odit fuga sapiente corporis
-                     tempora modi recusandae iure possimus libero autem eum asperiores necessitatibus 
-                    repellendus, eveniet distinctio iste. Vel?</p>
-                <h2>Price 500/=</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img_div">
-                <img src="images/banner.jpg" alt="image">
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis beatae odit fuga sapiente corporis
-                    tempora modi recusandae iure possimus libero autem eum asperiores necessitatibus 
-                   repellendus, eveniet distinctio iste. Vel?</p>
-               <h2>Price 500/=</h2>
-            </div>
+        <div class="rights">
+            <div class="box1">© 2022 Scope Fasteners Inc.</div>
+            <div class="box2"> All Rights Reserved</div>
         </div>
     </div>
-    <div class="bottombar">
-        <h1>Logo</h1>
-        <h1>Company Name</h1>
-        <p>Terms of Use</p>
-        <p>Privacy Policy</p>
-        <p>© Copyright 2022. All Rights Reserved.</p>
-    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar"){
+                x.className += "responsive";
+            }
+            else{
+                x.className = "navbar";
+            }
+        }
+        </script>
 </body>
 </html>
