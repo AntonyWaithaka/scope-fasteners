@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scope Fasteners - We sell fasteners and offer Engineering services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b7a1882aef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="home.css", rel="stylesheet">
     
 </head>
 <body>
+    <div class="topbanner">
+        <div class="address">
+            <div><b><i class="fa fa-map-marker" style="font-size: 2.5rem"></i></b></div>
+            <div>700-Moi Avenue Nairobi, Kenya</div>
+        </div>
+        <div class="contact">
+            <div><b><i class="fas fa-phone-alt" style="font-size: 2.5rem"></i></b></div>
+            <div>+254-703-747-415</div>
+        </div>
+    </div>
     <div class="navarea">
         <div class="topbar">
             <img src="images/logo.png" alt="logo">
@@ -90,28 +101,32 @@
     </div>
     <div class="container7">
         <div class="box4">
+            <div class="icon2"><i class="fa fa-map-marker" style="font-size: 2.5rem"></i></div>
             <div class="boxcontent1">ADDRESS</div>
             <div class="boxcontent2">700 Moi Avenue Nairobi, Kenya</div>
         </div>
         <div class="box4">
+            <div class="icon2"><i class="fa fa-phone" style="font-size: 2.5rem"></i></div>
             <div class="boxcontent1">PHONES</div>
             <div class="boxcontent2">+254-703-747-415</div>
         </div>
         <div class="box4">
+            <div class="icon2"><i class="fa fa-clock-o" style="font-size: 2.5rem"></i></div>
             <div class="boxcontent1">HOURS</div>
             <div class="boxcontent2">8am -5pm EAT Mon-Sat</div>
         </div>
         <div class="box4">
-            <div class="boxcontent1">EMAIL</div>
+            <div class="icon2"><i class="material-icons" style="font-size: 2.5rem">email</i></div>
+            <div class="boxcontent1">E- MAIL</div>
             <div class="boxcontent2">scopefasteners@gmail.com</div>
         </div>
     </div>
     <div class="bottombox">
         <div class="connect">
-            <a href="https://facebook.com"><img src="images/facebook.png"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png"></a>
-            <a href="https://whatsapp.com"><img src="images/whatsapp.png"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png"></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png"></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.png"></a>
         </div>
         <div class="rights">
             <div class="box1">© 2022 Scope Fasteners Inc.</div>
@@ -123,6 +138,7 @@
         var x = document.getElementById("myTopnav");
         if (x.className === "navbar"){
             x.className += "responsive";
+            
         }
         else{
             x.className = "navbar";
