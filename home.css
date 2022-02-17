@@ -240,13 +240,13 @@ body{
     position: absolute;
     bottom: 50%;
     left: 32px;
-    font-size: 90px;
+    font-size: 120px;
 }
 .banner .text2{
     position: absolute;
     bottom: 40%;
     left: 32px;
-    font-size: 60px;
+    font-size: 90px;
 }
 @media screen and (max-width:600px) {
     .banner .text1{
@@ -357,7 +357,7 @@ body{
     left: 16px;
     font-family: helvetica;
     font-size: 5.625rem;
-    color: blue;
+    color: darkblue;
 }
 .banner2 .text2{
     position: absolute;
