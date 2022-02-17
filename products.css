@@ -3,6 +3,50 @@ body{
     padding: 0px;
     font-size: 16px;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+.topbanner{
+    width: 100%;
+    height: 50px;
+    background-color: #003399;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: verdana;
+    font-size: 1em;
+    color: white;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 1em;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 1em;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 1em;
+    align-items: center;
+    width: 50%;
+}
+@media screen and (max-width:600px) {
+    .topbanner{
+        font-size: 0.8em;
+    }
+    
+}
 .navarea{
     display: flex;
     flex-direction: row;
@@ -230,7 +274,6 @@ h1, p{
     font-family: sans-serif;
     font-size: 2rem;
 }
-
 .bottombox{
     background-color: black;
     display: flex;
@@ -238,7 +281,18 @@ h1, p{
     justify-content: center;
     align-items: center;
 }
-.bottombox .connect{
+.bottombox .connect_text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+.bottombox .connect_icons{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -248,7 +302,7 @@ h1, p{
     font-family: sans-serif;
     font-size: 1rem;
 }
-.bottombox .connect img{
+.bottombox .connect_icons img{
     width: 2rem;
     margin: 1rem;
 }
@@ -261,6 +315,5 @@ h1, p{
     color: white;
     font-family: sans-serif;
     font-size: 1rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }

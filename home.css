@@ -357,7 +357,7 @@ body{
     left: 16px;
     font-family: helvetica;
     font-size: 5.625rem;
-    color: darkblue;
+    color: blueviolet;
 }
 .banner2 .text2{
     position: absolute;
@@ -374,7 +374,7 @@ body{
         left: 16px;
         font-family: helvetica;
         font-size: 2.425rem;
-        color: blue;
+        color: blueviolet;
     }
     .banner2 .text2{
         position: absolute;
@@ -436,7 +436,18 @@ body{
     justify-content: center;
     align-items: center;
 }
-.bottombox .connect{
+.bottombox .connect_text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+.bottombox .connect_icons{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -446,7 +457,7 @@ body{
     font-family: sans-serif;
     font-size: 1rem;
 }
-.bottombox .connect img{
+.bottombox .connect_icons img{
     width: 2rem;
     margin: 1rem;
 }
@@ -459,7 +470,6 @@ body{
     color: white;
     font-family: sans-serif;
     font-size: 1rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 p{
