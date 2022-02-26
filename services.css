@@ -1,15 +1,85 @@
-.topbar{
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
     width: 100%;
-    background-color: blue;
+    height: 50px;
+    background-color: black;
+}
+.item{
+    font-family: sans-serif;
+    font-size: 2rem;
+    width: 200px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.item:hover{
+    background-color: green;
     color: white;
 }
-.logo{
-    width: 200px;
+.dropDown{
+    display: none;
 }
-.name{
-    width: auto;
+.item:hover .dropDown{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+}
+.subItem{
+    font-family: sans-serif;
+    font-size: 2rem; 
+    width: 200px;   
+}
+.subItem:hover{
+    background-color: green;
+    color: white;
+}
+.extend{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    color: white;
+    padding-left: 0px;
+}
+.extend:hover{
+    width: 350px;
+    height: 40px;
+}
+.sideDown{
+    display: none;
+}
+.extend:hover .sideDown{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: black;
+    color: white;
+    height:max-content ;
+}
+.subSubItem{
+    font-family: sans-serif;
+    font-size: 1.5rem;    
+}
+.subSubItem:hover{
+    background-color: green;
+    color: white;
 }
 .title{
     width: 100%;
