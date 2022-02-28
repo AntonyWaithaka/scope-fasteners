@@ -170,14 +170,17 @@ body{
 }
 .navarea .navbar ul li:hover ul li{
     display: block;
+    width: 200px;
 }
 .navarea .navbar ul li:hover ul li ul li{
     display: none;
+    margin-left: 200px;
+    width: 200px;
 }
 .navarea .navbar ul li:hover ul li:hover ul li{
     display: block;
     float: left;
-    margin-left: 134px;
+    margin-left: 200px;
     width: 200px;
 }
 @media screen and (max-width:600px) {
