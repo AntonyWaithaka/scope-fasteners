@@ -36,6 +36,15 @@ body{
     align-items: center;
     width: 50%;
 }
+.contact a{
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 1em;
+    color: white;
+}
+.contact a:hover{
+    color: blue;
+}
 @media screen and (max-width:600px) {
     .topbanner{
         font-size: 0.8em;
